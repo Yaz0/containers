@@ -12,7 +12,7 @@ RUN \
   apk add --no-cache \
     less man-db fish bash asciinema tree bitwise shellcheck nnn git-lfs fd \
     ripgrep docs gitui helix delta tmux bat fzf dust tree-sitter-grammars \
-    g++ openssh-client-default
+    g++ openssh-client-default npm
 
 # Copy configuration files into image.
 COPY config/* /etc/config/

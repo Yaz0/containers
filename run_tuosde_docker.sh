@@ -50,7 +50,7 @@ display_help () {
 
 script_name=$(basename $0)
 workspace_path=$(pwd)
-image="hvarga/tuosde-docker"
+image="localhost/local"
 
 while getopts ":hw:i:" opt; do
 	case ${opt} in
