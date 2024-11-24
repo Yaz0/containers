@@ -1,5 +1,5 @@
 # Start from official Alpine Linux image.
-FROM alpine:3.19
+FROM alpine:3.20
 
 # Set default shell.
 ENV SHELL "/usr/bin/fish"
@@ -12,7 +12,7 @@ RUN \
   apk add --no-cache \
     less man-db fish bash asciinema tree bitwise shellcheck nnn git-lfs fd \
     ripgrep docs gitui helix delta tmux bat fzf dust tree-sitter-grammars \
-    g++ openssh-client-default npm
+    g++ openssh-client-default npm clang clang-dev py3-lsp-server
 
 # Copy configuration files into image.
 COPY config/* /etc/config/
